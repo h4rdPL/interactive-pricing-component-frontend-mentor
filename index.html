@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./style/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { position: absolute; bottom: 0%; left: 50%; transform: translateX(-50%); width: 100%; font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -25,27 +25,26 @@
       </p>
     </div>
     <div class="card">
-      <div class="card__flex">
         <h2 class="card__header">
           100k Pageviews
         </h2>
-        <input type="range" name="" id="">
+        <input class="card__input" type="range" name="" id="">
         <h2 class="card__money">
-          $16 / <span>month</span> 
+          $16.00 <span class="card__money-month">/ month</span> 
         </h2>
         <div class="card__billing">
-          <h3 class="billing__header">
+          <h3 class="card__header card__header-billing">
             Monthly Billing
           </h3>
-          <span class="billing__toggle">
-            ...
+          <span class="card__toggle">
+            
           </span>
-          <h3 class="billing__header">
-            Yearly Billing <span>-25%</span> 
+          <h3 class="card__header card__header-billing">
+            Yearly Billing <span class="card__header-discount">-25%</span> 
           </h3>
-        </div>
       </div>
-      <div class="card__benefits">
+      <div class="card__trial">
+
         <ul class="card__list">
           <li class="card__list__item">
             Unlimited websites
@@ -65,7 +64,7 @@
   </section>  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">h4rdPL</a>.
   </div>
 </body>
 </html>
