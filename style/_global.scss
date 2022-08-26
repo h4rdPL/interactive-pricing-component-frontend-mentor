@@ -27,6 +27,12 @@ $fontFamily: 'Manrope', 'sans-serif';
 $regular: 600;
 $bold: 800;
 
+// media queries
+
+$laptop: 1200px;
+$tablet: 768px;
+// reset
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;

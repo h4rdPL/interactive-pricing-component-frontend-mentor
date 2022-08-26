@@ -25,13 +25,16 @@
       </p>
     </div>
     <div class="card">
-        <h2 class="card__header">
+      
+      <div class="card__flex">
+        <h2 class="card__header flex__header">
           100k Pageviews
         </h2>
-        <input class="card__input"  type="range" min="1" max="100" step="1" value="15">
-        <h2 class="card__money">
+        <h2 class="card__money flex__money">
           $16.00 <span class="card__money-month">/ month</span> 
         </h2>
+          <input class="card__input flex__input"  type="range" min="1" max="100" step="1" value="15">
+      </div>
         <div class="card__billing">
           <h3 class="card__header card__header-billing">
             Monthly Billing
@@ -40,7 +43,7 @@
             
           </span>
           <h3 class="card__header card__header-billing">
-            Yearly Billing <span class="card__header-discount">-25%</span> 
+            Yearly Billing <span class="card__header-discount">-25% <span class="discount">discount</span></span> 
           </h3>
       </div>
       <div class="card__trial">
