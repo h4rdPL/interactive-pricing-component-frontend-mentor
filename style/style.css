@@ -83,16 +83,30 @@ ul {
   margin: 0 0.7rem;
   background-color: hsl(224deg, 65%, 95%);
 }
+.card__toggle::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 45px;
+  height: 20px;
+  border-radius: 25px;
+  background-color: hsl(174deg, 86%, 45%);
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+}
 .card__toggle::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
+  top: 2%;
+  left: 10%;
   width: 15px;
   height: 80%;
   border-radius: 50%;
   background-color: hsl(0deg, 0%, 100%);
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
 }
 .card__billing {
   display: flex;
@@ -133,42 +147,12 @@ ul {
   position: absolute;
   left: -30%;
 }
-.card input[type=range]::-ms-track {
-  width: 300px;
-  height: 5px;
-  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
-  background: transparent;
-  /*leave room for the larger thumb to overflow with a transparent border */
-  border-color: transparent;
-  border-width: 6px 0;
-  /*remove default tick marks*/
-  color: transparent;
-}
 
-input[type=range]::-ms-fill-lower {
-  background: #777;
-  border-radius: 10px;
+.active::after {
+  opacity: 1;
 }
-
-input[type=range]::-ms-fill-upper {
-  background: #ddd;
-  border-radius: 10px;
-}
-
-input[type=range]::-ms-thumb {
-  border: none;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background: goldenrod;
-}
-
-input[type=range]:focus::-ms-fill-lower {
-  background: #888;
-}
-
-input[type=range]:focus::-ms-fill-upper {
-  background: #ccc;
+.active::before {
+  transform: translateX(140%);
 }
 
 .btn {
@@ -184,8 +168,4 @@ input[type=range]:focus::-ms-fill-upper {
   font-family: hsl(226deg, 100%, 87%);
   font-weight: 600;
   margin-top: 1.5rem;
-}
-
-.active {
-  transform: translateX(100%);
 }/*# sourceMappingURL=style.css.map */
