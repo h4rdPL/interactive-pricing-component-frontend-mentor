@@ -18,7 +18,7 @@ Installing
 ======
 
 ```
-1. Download or clone repo → gh repo clone h4rdpl/qr-code-frontend-mentor
+1. Download or clone repo → gh repo clone h4rdPL/interactive-pricing-component-frontend-mentor
 ```
 
 ```
@@ -27,7 +27,7 @@ Installing
 
 Or
 ```
-Copy&Open live link: https://h4rdpl.github.io/qr-code-frontend-mentor/
+Copy&Open live link: https://h4rdpl.github.io/interactive-pricing-component-frontend-mentor/
 ```
 
 Design
